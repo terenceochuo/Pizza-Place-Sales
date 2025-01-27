@@ -1,5 +1,5 @@
 # Pizza-Place-Sales
-A year's worth of sales from a fictitious pizza place,including the date and the time of each order and the pizzas served,with additional details on the type,size,quantity,price and ingredients
+A year's worth of sales from a fictitious pizza place,including the date and the time of each order and the pizzas served,with additional details on the type,size,quantity,price and ingredients.The analysis is aimed to offer insights ands suggestions to the restaurant's management so that they can make informed-decisions about running the business.
 We are going to use MYSQL workbench to solve the study case questions
 
 # Queries
