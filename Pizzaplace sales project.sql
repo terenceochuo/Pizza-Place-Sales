@@ -3,21 +3,17 @@ CREATE DATABASE Pizzadb;
 ---Import the cv files into ssms tables 
 ---How many customers do we have each day ? 
 SELECT 
-COUNT(DISTINCT O.order_id) AS num_customers,
+COUNT(DISTINCT order_id) AS num_customers,
 date
-FROM dbo.orders O
-JOIN dbo.order_details OD
-ON O.order_id =OD.order_id
+FROM dbo.orders 
 GROUP BY date
 ORDER BY 2
   
 --- Are there any peak hours?
 SELECT 
-COUNT(DISTINCT O.order_id) AS num_orders,
+COUNT(DISTINCT order_id) AS num_orders,
 DATEPART(hour,time) AS hour_slot
-FROM dbo.orders O
-JOIN dbo.order_details OD
-ON O.order_id =OD.order_id
+FROM dbo.orders 
 GROUP BY DATEPART(hour,time)
 ORDER BY num_orders DESC
 
